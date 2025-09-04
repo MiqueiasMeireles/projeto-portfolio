@@ -7,3 +7,9 @@
   --destaque-inverso
   --fundo-card
 */
+
+header {
+  background-color: aqua;
+}
+
+p {font-family: Arial, Helvetica, sans-serif;}
