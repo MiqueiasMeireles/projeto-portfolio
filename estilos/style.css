@@ -8,8 +8,65 @@
   --fundo-card
 */
 
-header {
-  background-color: aqua;
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  margin: 0px;
+  padding: 0px;
 }
 
-p {font-family: Arial, Helvetica, sans-serif;}
+body{
+  background-color: #f5f5f5;
+  color: #222222;
+}
+
+header {
+  background-color: #0077ff;
+  padding: 10px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: right;  
+}
+
+nav li {
+  margin-right: 20px;
+  cursor: pointer;
+  color: white; 
+}
+
+section {
+  background-color: white;
+  margin: 20px;
+}
+
+#introducao button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: #0077ff;
+}
+
+
+h1 {
+  color: #0077ff;
+  font-size: 24px;
+}
+
+h2{font-size: 17px;}
+
+#formacao {
+  h2{
+    color: #66bbfe;
+  }
+  strong{
+    font-size: 12px;
+  }
+}
+
+footer {
+  background-color: #0077ff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
