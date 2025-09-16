@@ -12,6 +12,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;  
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth; /* scroll suave as clicar na navegação */
 }
 
 body{
@@ -22,29 +23,70 @@ body{
 header {
   background-color: #0077ff;
   padding: 10px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav ul{
   display: flex;
   justify-content: right;  
+  list-style: none;
 }
 
 nav li {
   margin-right: 20px;
   cursor: pointer;
-  color: white; 
+  color: white;
 }
+
+nav a {
+  display: inline-block;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.2s, color 0.2s;
+}
+
+
+nav a:hover {
+  color: #0077ff;
+  background-color: #66bbfe;
+}
+
+main {
+  margin-top: 70px;
+}
+
+
 
 section {
   background-color: white;
+  border-radius: 10px;
   margin: 20px;
+  padding: 20px;
+  h1 {
+    margin: 10px 0px;
+  }
+  p{
+    margin: 15px 0px;
+  }
 }
 
-#introducao button {
+iframe {
+  border-radius: 10px;
+}
+
+#introducao i {
   cursor: pointer;
   border: none;
   background-color: white;
-  color: #0077ff;
+  color: #0077ff;  
+  margin: 0px 5px;
+  font-size: 30px;
 }
 
 
@@ -54,6 +96,32 @@ h1 {
 }
 
 h2{font-size: 17px;}
+
+#skills {
+  margin-bottom: 20px;
+  h2 {
+    margin: 10px 0px;
+  }
+}
+
+.progress {
+  background-color: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  background-color: #66bbfe;
+  height: 100%;
+  text-align: left;
+  color: white;
+  font-size: 15x;
+  line-height: 20px;
+  transition: width 0.5s ease-in-out;
+}
 
 #formacao {
   h2{
